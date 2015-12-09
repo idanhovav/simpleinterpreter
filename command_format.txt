@@ -1,0 +1,9 @@
+Command Format:
+
+List of commands to give as one integer on first line.
+Code only works for 1 command sequence.
+
+Commands as 3 digit integers, each on a separate line.
+
+End number sequence with 100.
+End file with empty line.

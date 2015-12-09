@@ -1,0 +1,21 @@
+1 case
+
+set register 5 to value 6
+set register 1 to value 5
+set register 8 to value 9
+[0,5,0,0,0,6,0,0,9,0]
+set register 2 to the value in RAM whose address is in register 1
+multiply register 8 by 2
+multiply register 1 by the value in register 2
+[0,30,6,0,0,6,0,0,18,0]
+set register 0 to value 7
+set register 3 to the value of register 5
+set register 4 to value 7
+[7,30,6,6,7,6,0,0,18,0]
+set value in RAM whose address is in register 4 to the value of reg 0
+set register 3 to value 1
+goto location in register 3 if register 7 is not 0
+[7,30,6,1,7,6,0,7,18,0], curry = 1. val == register[curr] == 30
+halt
+
+output: 30, since current location is register 1.
