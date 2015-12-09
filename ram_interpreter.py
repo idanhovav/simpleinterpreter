@@ -19,6 +19,10 @@ register a to the value of register s
 0ds	means goto the location in register d unless 
 register s contains 0
 
+
+TODO:
+Make multiple prompt lists possible. Could make work by 
+using blank spaces as delimiters? Would have to do within main.
 """
 
 def read(source):
